@@ -1,0 +1,9 @@
+db.processed_records.find()
+use api_data
+cd
+db.processed_records.find()
+db.processed_records.insertOne({ coin: "bitcoin", usd_price: 65000, tag: "test-insert" })
+db.createCollection("processed_records")
+use api_data
+db.processed_records.find()
+use api_data
